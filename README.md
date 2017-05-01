@@ -1,12 +1,12 @@
-##A simple example of a responsive layout using Bourbon Neat. 
+## A simple example of a responsive layout using Bourbon Neat. 
 
 https://andreacardybailey.github.io/responsive_example_w_neat/
 
 This is an adaptation of https://github.com/andreacardybailey/responsive_example, which uses no grid.
 
-###Notes:
+### Notes:
 
-**To setup this project, beginning from the structure found here: https://github.com/andreacardybailey/responsive_example...**
+**To setup this project, beginning from the structure found here:** https://github.com/andreacardybailey/responsive_example...
 
 **You must install neat and sass, as follows:**
 
