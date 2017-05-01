@@ -11,8 +11,11 @@ This is an adaptation of https://github.com/andreacardybailey/responsive_example
 **You must install neat and sass, as follows:**
 
 $ gem install neat
+
 $ gem install sass
+
 $ cd styles
+
 $ neat install
 
 **Then, within your new responsive-base.scss stylesheet:**
