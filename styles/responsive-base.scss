@@ -1,0 +1,60 @@
+@import "neat/neat";
+
+$nav-layout: (
+  columns: 12,
+  gutter: 0
+);
+
+$medium: (
+  media: 700px,
+);
+
+$large: (
+  media: 1024px,
+);
+
+* {
+  box-sizing: border-box;
+}
+
+.main-nav-list {
+  list-style: none;
+  padding: 0;
+}
+.main-nav-list-item {
+  padding: .7rem 0;
+  text-align:center;
+  background-color: lime;
+  border: 1px solid #000;
+}
+
+.box {
+  background-color: pink;
+  border:1px solid blue;
+  margin: 10px 0;
+  padding:10px;
+}
+
+@include grid-media($medium){
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .main-nav-list {
+    @include grid-container;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .main-nav-list-item {
+    @include grid-column(3, $nav-layout);
+  }
+  .box {
+    @include grid-column(6);
+  }
+}
+
+@include grid-media($large){
+  .box {
+    @include grid-column(4);
+  }
+}

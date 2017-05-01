@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box; }
+
+.main-nav-list {
+  list-style: none;
+  padding: 0; }
+
+.main-nav-list-item {
+  padding: .7rem 0;
+  text-align: center;
+  background-color: lime;
+  border: 1px solid #000; }
+
+.box {
+  background-color: pink;
+  border: 1px solid blue;
+  margin: 10px 0;
+  padding: 10px; }
+
+/*
+ * Here is where you would override your base styles
+ * for screens that are larger than 700px.
+ *
+ * Write these styles 2nd!
+ *
+ * You don't need to write separate styles here
+ * UNLESS you are overriding your base styles.
+ */
+@media only screen and (min-width: 700px) {
+  body {
+    width: 80%;
+    margin: 0 auto; }
+
+  .main-nav-list {
+    margin-left: 20px;
+    margin-right: 20px; }
+    .main-nav-list::after {
+      clear: both;
+      content: "";
+      display: block; }
+
+  .main-nav-list-item {
+    width: calc(25%);
+    float: left;
+    margin-left: 0; }
+
+  .box {
+    width: calc(50% - 30px);
+    float: left;
+    margin-left: 20px; } }
+/*
+ * Here is where you would write your styles for screens
+ * larger than 1024px.
+ *
+ * These styles OVERRIDE any styles written above.
+ *
+ * Write these styles 3rd!
+ */
+@media only screen and (min-width: 1024px) {
+  .box {
+    width: calc(33.33333% - 26.66667px);
+    float: left;
+    margin-left: 20px; } }
+
+/*# sourceMappingURL=responsive-base.css.map */
