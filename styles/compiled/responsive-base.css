@@ -17,15 +17,6 @@
   margin: 10px 0;
   padding: 10px; }
 
-/*
- * Here is where you would override your base styles
- * for screens that are larger than 700px.
- *
- * Write these styles 2nd!
- *
- * You don't need to write separate styles here
- * UNLESS you are overriding your base styles.
- */
 @media only screen and (min-width: 700px) {
   body {
     width: 80%;
@@ -48,14 +39,6 @@
     width: calc(50% - 30px);
     float: left;
     margin-left: 20px; } }
-/*
- * Here is where you would write your styles for screens
- * larger than 1024px.
- *
- * These styles OVERRIDE any styles written above.
- *
- * Write these styles 3rd!
- */
 @media only screen and (min-width: 1024px) {
   .box {
     width: calc(33.33333% - 26.66667px);
